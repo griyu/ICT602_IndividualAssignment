@@ -14,7 +14,7 @@
     <string name="instructions_title">How to Use:</string>
     <string name="instructions_text">1. Select the month from the dropdown.\n2. Enter the units consumed (between 1 and 1000 kWh).\n3. Use the slider to select a rebate percentage (0-5%).\n4. Click Calculate to see the estimated bill.\n5. Click Save to keep a record in the history.</string>
     <string name="student_info">Name: Mohamad Adib Adam bin Mohamad Zaidi\nStudent ID: 2025147673\nCourse: ICT602 - Mobile Technology And Development\nGroup: CDCS2515A</string>
-    <string name="github_url">https://github.com/mali-uitm/ict602-project</string>
+    <string name="github_url">https://github.com/griyu/ICT602_IndividualAssignment</string>
     <string name="copyright">© 2026 Electricity Bill Estimator. All Rights Reserved.</string>
 
     <string-array name="months_array">
