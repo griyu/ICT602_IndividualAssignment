@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/month_label"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/months_array"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/units_label"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etUnits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="1 - 1000 kWh"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvRebateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rebate Percentage: 0%"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <SeekBar
+            android:id="@+id/seekBarRebate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="5"
+            android:progress="0"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvTotalCharges"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Charges: RM 0.00"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvFinalCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Final Cost: RM 0.00"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryColor"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/history"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about"
+            style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="* Tiered charges applied according to TNB rates."
+            android:textSize="12sp"
+            android:layout_marginTop="16dp"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
+</ScrollView>
